@@ -9,11 +9,7 @@ permissions:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Releasing ref ${{ inputs.ref }}"
-      
-  create_tag:
+
     runs-on: ubuntu-latest
 
     steps:
