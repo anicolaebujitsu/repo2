@@ -1,11 +1,8 @@
 name: Tag from Commit
 
 on:
-  workflow_call:
-    inputs:
-      ref:
-        required: true
-        type: string
+  repository_dispatch:
+    types: [trigger-release]
     
 permissions:
   contents: write
