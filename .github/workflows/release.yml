@@ -43,7 +43,7 @@ jobs:
 
       - name: Push commit
         run: |
-          git push
+          git push origin ${{ github.event.client_payload.branch }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
