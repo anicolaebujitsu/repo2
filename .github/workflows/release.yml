@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0   # Needed so we can create tags
+          ref: ${{ github.event.client_payload.branch }}
 
       - name: Generate tag from commit SHA
         id: tagger
